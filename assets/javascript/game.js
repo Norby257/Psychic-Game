@@ -12,8 +12,6 @@
 			var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 	        //determine which key was the player chose, store it in playerguess variable (within scope of this function)
 	        var playerGuess = event.key;
-	        console.log(playerGuess);
-	        return playerGuess;
 	        // check if player is correct. if player is correct, add one to wins, re-set guessesLeft and make computer pick another letter.
 	        if (playerGuess === computerGuess) {
 	        	wins++;
