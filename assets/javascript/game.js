@@ -6,12 +6,14 @@
 	var playerGuess;
 
 
-	// this function is run when a user presses a key 
+	// this function runs when a user presses a key 
 	document.onkeyup = function(event) {
 			//computer randomly picks a letter from the array of choices
 			var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-	        //determine which key was pressed stored in playerchoice variable (within scope of this function)
+	        //determine which key was the player chose, store it in playerguess variable (within scope of this function)
 	        var playerGuess = event.key;
+	        console.log(playerGuess);
+	        return playerGuess;
 	        // check if player is correct. if player is correct, add one to wins, re-set guessesLeft and make computer pick another letter.
 	        if (playerGuess === computerGuess) {
 	        	wins++;
