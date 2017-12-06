@@ -16,17 +16,16 @@ var playerGuess;
 				wins++;
 				guessesLeft = 9;
 				var computerGuess = choices[Math.floor(Math.random() * choices.length)];
+	
 		
-		 } else if(guessesLeft = 0)  {
-
-				losses++;
-				var computerGuess = choices[Math.floor(Math.random() * choices.length)];
-				
-
-			}
-		
-		  else {
+		   }  else {
 			 guessesLeft--;
+				for (guessesLeft = 9; guessesLeft > 0; guessesLeft--) {
+					guessesLeft--;
+					losses++;
+			 }
+			 var computerGuess = choices[Math.floor(Math.random() * choices.length)];
+			 
 		 }
 	
 	}
