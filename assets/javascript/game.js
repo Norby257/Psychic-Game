@@ -31,7 +31,7 @@ var playerGuess;
 	}
 
 	document.getElementById("game").innerHTML = `
-	<p> Your Guesses So Far: ${playerGuess}</p>
+	<p> Your Guesses So Far: ${event.key}</p>
 	<p> Wins: ${wins}</p>
 	<p> Losses: ${losses} </p>
 	<p> Guesses Left: ${guessesLeft} </p>	
